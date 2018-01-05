@@ -37,9 +37,12 @@ func RemoveElementAtIndex(i int) {
 		return
 	}
 
+	length--
+
 	// if it is the first element no need to loop
 	if i == 0 {
 		start = start.next
+
 		return
 	}
 
@@ -52,5 +55,4 @@ func RemoveElementAtIndex(i int) {
 		curr = curr.next
 	}
 	prev.next = curr.next
-	length--
 }
