@@ -54,5 +54,31 @@ func RemoveElementAtIndex(i int) {
 		prev = curr
 		curr = curr.next
 	}
+
 	prev.next = curr.next
+}
+
+// ElementAtIndex returns the element at the specified index. NOTE: Index starts from 0
+func ElementAtIndex(i int) *Element {
+	if !(i < length) {
+		return nil
+	}
+
+	// if it's the first element
+	if i == 0 {
+		return start
+	}
+
+	curr := start
+
+	for j := 1; j <= i; j++ {
+		curr = curr.next
+	}
+
+	return curr
+}
+
+// Length returns the length of the linked list
+func Length() int {
+	return length
 }
