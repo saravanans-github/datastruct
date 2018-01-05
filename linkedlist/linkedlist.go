@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 // Element is the structure of each node in the linked list.
 type Element struct {
@@ -10,12 +10,9 @@ var start *Element
 var end *Element
 var length int
 
-func main() {
-
-}
-
 func Init() {
-
+	start = nil
+	length = 0
 }
 
 // AppendElement appends the element passed into the end of the linked list.

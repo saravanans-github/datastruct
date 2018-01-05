@@ -1,10 +1,11 @@
-package main
+package linkedlist
 
 import (
 	"testing"
 )
 
 func TestAppendElement(t *testing.T) {
+	Init()
 	testData := []Element{Element{"hello", nil}, Element{"everyone!", nil}}
 	AppendElement(testData[0])
 	AppendElement(testData[1])
@@ -19,6 +20,7 @@ func TestAppendElement(t *testing.T) {
 }
 
 func TestRemoveElementAtIndex_Middle(t *testing.T) {
+	Init()
 	testData := []Element{Element{"hello", nil}, Element{"everyone!", nil}, Element{"Good day!", nil}}
 	AppendElement(testData[0])
 	AppendElement(testData[1])
@@ -36,6 +38,7 @@ func TestRemoveElementAtIndex_Middle(t *testing.T) {
 }
 
 func TestRemoveElementAtIndex_First(t *testing.T) {
+	Init()
 	testData := []Element{Element{"hello", nil}, Element{"everyone!", nil}, Element{"Good day!", nil}}
 	AppendElement(testData[0])
 	AppendElement(testData[1])
@@ -53,6 +56,7 @@ func TestRemoveElementAtIndex_First(t *testing.T) {
 }
 
 func TestRemoveElementAtIndex_Last(t *testing.T) {
+	Init()
 	testData := []Element{Element{"hello", nil}, Element{"everyone!", nil}, Element{"Good day!", nil}}
 	AppendElement(testData[0])
 	AppendElement(testData[1])
@@ -70,6 +74,7 @@ func TestRemoveElementAtIndex_Last(t *testing.T) {
 }
 
 func TestElementAtIndex_First(t *testing.T) {
+	Init()
 	testData := []Element{Element{"hello", nil}, Element{"everyone!", nil}, Element{"Good day!", nil}}
 	AppendElement(testData[0])
 	AppendElement(testData[1])
@@ -83,6 +88,7 @@ func TestElementAtIndex_First(t *testing.T) {
 }
 
 func TestElementAtIndex_Middle(t *testing.T) {
+	Init()
 	testData := []Element{Element{"hello", nil}, Element{"everyone!", nil}, Element{"Good day!", nil}}
 	AppendElement(testData[0])
 	AppendElement(testData[1])
@@ -96,6 +102,7 @@ func TestElementAtIndex_Middle(t *testing.T) {
 }
 
 func TestElementAtIndex_Last(t *testing.T) {
+	Init()
 	testData := []Element{Element{"hello", nil}, Element{"everyone!", nil}, Element{"Good day!", nil}}
 	AppendElement(testData[0])
 	AppendElement(testData[1])
